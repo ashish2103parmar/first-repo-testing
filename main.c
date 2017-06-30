@@ -59,7 +59,7 @@ int main()
 			/* Exit */
 			case 5 :
 				
-				exit(1);
+				return 0;
 
 			/* Error handling */
 			default :
