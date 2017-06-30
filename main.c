@@ -7,59 +7,54 @@
 
 int main()
 {
-
 	float a, b, c;
 	int choice;
+	char ch;
 
-	while (1)
+	do
 	{
-		printf("\nEnter the values for  A and B\n");
-		scanf("%f %f", &a, &b);
-
 		printf("\nChoose the operation : \n\t1. ADD\n\t2. SUB \n\t3. MUL \n\t4. DIV\n\t5. exit\n\n");
 		scanf("%d", &choice);
 
-		while (1)
-			switch(choice)
-			{
-				case 1 :
-					{
-						c = add(a, b);
+		printf("\nEnter the values for A and B\n");
+		scanf("%f %f", &a, &b);
 
-					}
-					break;
+		switch(choice)
+		{
+			case 1 :
+				
+				c = add(a, b);
+				printf("The result is %f\n", c);
+				break;
 
-				case 2 :
-					{
-						c = sub(a, b);
+			case 2 :
+				
+				c = sub(a, b);
+				printf("The result is %f\n", c);
+				break;
 
-					}
-					break;
+			case 3 :
+				
+				c = mul(a, b);
+				printf("The result is %f\n", c);
+				break;
 
-				case 3 :
-					{
-						c = mul(a, b);
+			case 4 :
+				
+				c = divi(a, b);
+				printf("The result is %f\n", c);
+				break;
 
-					}
-					break;
+			case 5 :
+				
+				exit(1);
 
-				case 4 :
-					{
-						c = div(a, b);
+			default :
+					printf("\nInvvalid option entered\n");
+		}
 
-					}
-					break;
-
-				case 5 :
-					{
-						return 0;
-					}
-					break;
-
-				default :
-					{
-						printf("\nInvvalid option entered\n");
-					}
-			}
-	}
+		printf("Do you want to continue(y/Y)...");
+		scanf("\n%c", &ch);
+	
+	}while (ch == 'y' || ch == 'Y');
 }
