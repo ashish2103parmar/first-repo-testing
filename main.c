@@ -20,7 +20,7 @@ int main()
 		/* Display and read the option */
 		printf("\nChoose the operation : \n\t1. ADD\n\t2. SUB \n\t3. MUL \n\t4. DIV\n\t5. exit\n\n");
 		scanf("%d", &choice);
-
+		
 		/* Read a values of a and b */
 		printf("\nEnter the values for A and B\n");
 		scanf("%f %f", &a, &b);
