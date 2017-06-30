@@ -66,12 +66,7 @@ int main()
 					printf("\nInvvalid option entered\n");
 		}
 
-		/* Read ch */
-		printf("Do you want to continue(y/Y)...");
-		scanf("\n%c", &ch);
-	
-	/* Continue the loop if ch is y/Y */
-	}while (ch == 'y' || ch == 'Y');
+	}while (1);
 
 	return 0;
 }
