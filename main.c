@@ -15,7 +15,7 @@ int main()
 	int choice;
 	char ch;
 
-	do
+	while (1)
 	{
 		/* Display and read the option */
 		printf("\nChoose the operation : \n\t1. ADD\n\t2. SUB \n\t3. MUL \n\t4. DIV\n\t5. exit\n\n");
@@ -66,7 +66,7 @@ int main()
 					printf("\nInvvalid option entered\n");
 		}
 
-	}while (1);
+	}
 
 	return 0;
 }
