@@ -1,2 +1,3 @@
 # first-repo-testing
-#mul function added
+
+SImple CALC 
