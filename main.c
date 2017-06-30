@@ -12,52 +12,53 @@ int main()
 
 	while (1)
 	{
-	printf("\nEnter the values for  A and B\n");
-	scanf("%d %d", &a, &b);
+		printf("\nEnter the values for  A and B\n");
+		scanf("%d %d", &a, &b);
 
-	printf("\nChoose the operation : \n\t1. ADD\n\t2. SUB \n\t3. MUL \n\t4. DIV\n\t5. exit\n\n");
-	scanf("%d", &choice);
+		printf("\nChoose the operation : \n\t1. ADD\n\t2. SUB \n\t3. MUL \n\t4. DIV\n\t5. exit\n\n");
+		scanf("%d", &choice);
 
-	switch(choice)
-	{
-		case 1 :
+		while (1)
+			switch(choice)
 			{
-				c = add(a, b);
-			
-			}
-			break;
+				case 1 :
+					{
+						c = add(a, b);
 
-		case 2 :
-			{
-				c = sub(a, b);
-			
-			}
-			break;
+					}
+					break;
 
-		case 3 :
-			{
-				c = mul(a, b);
-			
-			}
-			break;
+				case 2 :
+					{
+						c = sub(a, b);
 
-		case 4 :
-			{
-				c = div(a, b);
-			
-			}
-			break;
+					}
+					break;
 
-		case 5 :
-			{
-			exit(1);
-			}
-			break;
+				case 3 :
+					{
+						c = mul(a, b);
 
-		default :
-			{
-			printf("\nInvvalid option entered\n");
+					}
+					break;
+
+				case 4 :
+					{
+						c = div(a, b);
+
+					}
+					break;
+
+				case 5 :
+					{
+						exit(1);
+					}
+					break;
+
+				default :
+					{
+						printf("\nInvvalid option entered\n");
+					}
 			}
-	}
 	}
 }
