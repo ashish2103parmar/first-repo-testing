@@ -5,7 +5,7 @@
 /* Header files */
 #include <stdio.h>
 #include <stdlib.h>
-#include "header.h"
+#include <header.h>
 
 /* Main function */
 int main()
