@@ -3,17 +3,20 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "header.h"
 
 int main()
 {
 
 	float a, b, c;
+	int choice;
 
 	while (1)
 	{
 		printf("\nEnter the values for  A and B\n");
 		scanf("%d %d", &a, &b);
+		scanf("%f %f", &a, &b);
 
 		printf("\nChoose the operation : \n\t1. ADD\n\t2. SUB \n\t3. MUL \n\t4. DIV\n\t5. exit\n\n");
 		scanf("%d", &choice);
