@@ -1,4 +1,6 @@
-
+/*
+   simple calc
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
